@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>SBTE survey form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="container">
+		<header class="header">
+			<h1 id="title" class="text-center">SBTE Student's Survey Form</h1>
+			<p id="description" class="description text-center">
+				This is a survey conducted by SBTE jharkhand for all students of polytechnic college to give a survey regarding the quality of education provided in their college.
+			</p>
+	    </header>
+		<form id="survey-form">
+			<div class="form-group">
+				<label for="name" id="name-label">Name:-</label>
+				<input type="text" name="name" id="name" class="form-control" placeholder="Enter your name here" required="required">
+			</div>
+			<div class="form-group">
+				<label for="email" id="email-label">Email:-</label>
+				<input type="Email" name="email" id="email" class="form-control" placeholder="Enter your email abc@gmail.com" required="required">
+			</div>
+			<div class="form-group">
+				<label for="number" id="number-label">Enter Phone number</label>
+				<input type="number" name="number" id="number" class="form-control" placeholder="enter phone number" min="0" max="999999999">
+			</div>
+			<div class="form-group">
+				<label for="clgname" id="clgname">College name</label>
+				<input type="text" name="clgname" id="clgname" class="form-control" placeholder="Enter your college name" required="required">
+			</div>
+			<div class="form-group">
+				<label for="District">District of your college</label>
+				<select  name="District" id="dropdown" class="form-control">
+					<option value="select">Select</option>
+					<option value="bokaro">Bokaro</option>
+					<option value="chatra">Chatra</option>
+					<option value="deoghar">Deoghar</option>
+					<option value="dhanbad">Dhanbad</option>
+					<option value="dumka">Dumka</option>
+					<option value="east-singhbhum">East-Shinghbum</option>
+					<option value="Garhwa">Garhwa</option>
+					<option value="giridih">Giridih</option>
+					<option value="Godda">Godda</option>
+					<option value="gumla">Gumla</option>
+					<option value="hazaribag">Hazaribag</option>
+					<option value="jamtara">Jamtara</option>
+					<option value="khunti">Khunti</option>
+					<option value="koderma">Koderma</option>
+					<option value="Latehar">Latehar</option>
+					<option value="Lohardaga">Lohardaga</option>
+					<option value="Pakur">Pakur</option>
+					<option value="Palamu">Palamu</option>
+					<option value="Ramgarh">Ramgarh</option>
+					<option value="Ranchi">Ranchi</option>
+					<option value="Sahibganj">Sahibganj</option>
+					<option value="Seraikela-Kharsawan">Serikela-Kharsawan</option>
+					<option value="Simdega">Simdega</option>
+					<option value="West Singhbhum">West Singhbhum</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="semester" id="semester-label">Semester</label>
+				<input type="number" name="semester" id="semester" class="form-control" placeholder="Semester" min="1" max="6">
+			</div>
+			<div class="form-group">
+				<p id="branch-label">Branch</p>
+				<input type="radio" name="branch" class="branch" value="Civil">
+				<label for="branch">Civil Engineering</label><br>
+				<input type="radio" name="branch" class="branch" value="Mechanical">
+				<label for="branch">Mechanical Engineering</label><br>
+				<input type="radio" name="branch" class="branch" value="Electrical">
+				<label for="branch">Electrical Engineering</label><br>
+				<input type="radio" name="branch" class="branch" value="cse">
+				<label for="branch">Computer Sceince Engineering</label><br>
+				<input type="radio" name="branch" class="branch" value="Electronics">
+				<label for="branch">Electronics Engineering</label><br>
+			</div>
+			<div class="form-group">
+				<p id="check-label">Select the different facilities provided by your college</p>
+				<input type="checkbox" name="Library" id="Library" class="checkbox" value="Library">
+				<label>Library</label><br>
+				<input type="checkbox" name="Canteen" id="Canteen" class="checkbox" value="Canteen">
+				<label>Canteen</label><br>
+				<input type="checkbox" name="Laboratories" id="Laboratories" class="checkbox" value="Laboratories">
+				<label>Laboratories</label><br>
+				<input type="checkbox" name="Hostel" id="Hostel" class="checkbox" value="Hostel">
+				<label>Hostel</label><br>
+				<input type="checkbox" name="Mess" id="Mess" class="checkbox" value="Mess">
+				<label>Mess</label><br>
+				<input type="checkbox" name="Wifi" id="Wifi" class="checkbox" value="Wifi">
+				<label>Wifi</label><br>
+				<input type="checkbox" name="Gym" id="Gym" class="checkbox" value="Gym">
+				<label>Gym</label><br>
+				<input type="checkbox" name="Swimming-pool" id="Swimming-pool" class="checkbox" value="Swimming-pool">
+				<label>Swimming-pool</label><br>
+				<input type="checkbox" name="Basket-ball" id="Basket-ball" class="checkbox" value="Basket-ball">
+				<label>Basket-ball court</label><br>
+			</div>
+			<div class="form-group">
+				<p for="">Are you satisfied by the services provided by your institution?</p>
+				<input type="radio" name="yesno" class="branch">
+				<label name="yseno" id="yes">Yes</label>
+				<input type="radio" name="yesno" class="branch">
+				<label name="yseno" id="no">No</label>
+			</div>
+			<div class="form-group">
+				<label>Any more suggestions that you would like to give</label>
+				<br>
+				<textarea class="text-area">
+				</textarea>
+			</div>
+			<div class="form-group">
+				<button type="SUBMIT" id="submit" class="submit-button">SUBMIT</button>
+			</div>
+		</form>
+</div>
+</body>
+</html>
